@@ -42,7 +42,7 @@ function YawHandler()
     
 end
 
-function lagsync(cmd)
+function lagsync(cmd)
     if cmd.tick_count % delayamount:GetValue() == 0 then
         switch = not switch;
     end
