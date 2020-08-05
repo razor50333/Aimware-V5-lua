@@ -2,19 +2,19 @@ local inverted = false;
 local switch = false;
 function DrawUI()
     screenX,screenY = draw.GetScreenSize();
-    window = gui.Window("aawindow","AA Window",screenX/2,screenY/2,250,800);
+    window = gui.Window("aawindow","AA Window",screenX/2,screenY/2,240,800);
     
     groupboxyaw = gui.Groupbox(window,"Base AA",20,15,200,200);
     yawamount = gui.Slider(groupboxyaw,"yaw_offset","Yaw Offset",0,-180,180);
     fakeamount = gui.Slider(groupboxyaw,"fake_amount","Fake Amount (%)",100,0,100);
     
-    groupboxlag = gui.Groupbox(window,"Lagsync",20,250,200,200);
+    groupboxlag = gui.Groupbox(window,"Lagsync",20,180,200,100);
     lagsyncbox = gui.Combobox(groupboxlag,"lagsync_type","Lagsync Type","Off","CT Auto","Lagsync V1","Lagsync V2","Lagsync V3","Lagsync V4","Custom");
     delayamount = gui.Slider(groupboxlag,"delay_amount","Delay Amount (ticks)",1,1,64);
     
     window:SetOpenKey(45);
     
-    lscustom = gui.Groupbox(window,"Lagsync Builder",20,450,200,200);
+    lscustom = gui.Groupbox(window,"Lagsync Builder",20,350,200,100);
     lscustomyaw1 = gui.Slider(lscustom,"yawoffset1","Yaw Offset 1",0,-180,180);
     lscustomyaw2 = gui.Slider(lscustom,"yawoffset2","Yaw Offset 2",0,-180,180);
     lscustomfake1 = gui.Slider(lscustom,"fakeoffset1","Fake Amount 1",0,0,100);
@@ -109,10 +109,10 @@ function GUIHandler()
     
     if lagsyncbox:GetValue() == 6 then
         lscustom:SetInvisible(false);
-        window:SetHeight(800);
+        window:SetHeight(650);
     else
         lscustom:SetInvisible(true);
-        window:SetHeight(450);
+        window:SetHeight(370);
     end
     
 end
