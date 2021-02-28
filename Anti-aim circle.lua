@@ -1,3 +1,5 @@
+--No Autoupdate for this script anymore because lost motivation
+
 local group = gui.Groupbox(gui.Reference("Visuals", "Local"), "Extra Indicators", 328, 284, 296)
 local radiussl = gui.Slider(group, "hi_rad", "Radius", 30, 10, 100)
 local thicknesssl = gui.Slider(group, "hi_thickness", "Thickness", 6, 1, 50)
