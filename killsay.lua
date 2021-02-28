@@ -2,8 +2,8 @@
 --
 --local    cS    =    GetScriptName()
 --local    cV    =    '1.0.0'
---local    gS    =    'PUT    LINK    TO    RAW    LUA    SCRIPT'
---local    gV    =    'PUT    LINK    TO    RAW    VERSION'
+--local    gS    =    'https://raw.githubusercontent.com/razor50333/Aimware-V5-lua/master/killsay.lua'
+--local    gV    =    '1.0.0'
 --
 --local    function    AutoUpdate()
 --	if    gui.GetValue('lua_allow_http')    and    gui.GetValue('lua_allow_cfg')    then
