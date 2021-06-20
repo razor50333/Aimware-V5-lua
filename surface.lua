@@ -245,7 +245,7 @@ end
 
 -- fallback to built in renderer
 setmetatable(M, {
-	__index = renderer
+	__index = draw
 })
 
 return M
