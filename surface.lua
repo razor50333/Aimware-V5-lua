@@ -4,6 +4,7 @@ local bit_bor = bit.bor
 local ffi_string = ffi.string
 local ffi_cast = ffi.cast
 
+
 local function vmt_entry(instance, index, type)
 	return ffi.cast(type, (ffi.cast("void***", instance)[0])[index])
 end
